@@ -108,7 +108,7 @@ body {
   font-style: italic;
 }
 .counselor:hover,
-.developer-btn a:hover { 
+.developer-btn a:hover {
   font-style: normal;
   text-decoration: underline;
 }
@@ -341,5 +341,9 @@ body {
   .sphere__container {
     flex-direction: column;
     margin-top: 2rem;
+  }
+  .footer__form :is(input, textarea) {
+    background-color: var(--text-light);
+    color: var(--white);
   }
 }
