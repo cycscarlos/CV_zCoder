@@ -403,7 +403,7 @@ body {
 /* Up to Windows view and smartphone styles */
 @media (max-width: 500px) {
   .overlay {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
   }
   .texto_profile {
     line-height: 1.7;
