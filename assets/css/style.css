@@ -31,7 +31,6 @@
   --text-dark: #0d1319;
   --black-color-opacity: rgba(0, 0, 0, 0.5);
   --white-color-opacity: rgba(255, 255, 255, 0.3);
-  --green: #008000;
   --max-width: 1200px;
 }
 * {
@@ -51,7 +50,7 @@ body {
   margin: auto;
   padding: 5rem 1rem;
 }
-/*: Botón Ingles/Español para PC & Tablets in landscape mode */
+/* Botón Ingles/Español para PC & Tablets in landscape mode */
 .lenguaje {
   display: flex;
   justify-content: center;
@@ -403,6 +402,9 @@ body {
 }
 /* Up to Windows view and smartphone styles */
 @media (max-width: 500px) {
+  .overlay {
+    background-color: var(--black-color-opacity);
+  }
   .texto_profile {
     line-height: 1.7;
   }
@@ -421,5 +423,15 @@ body {
     position: absolute;
     top: 10px;
     right: 10px;
+  }
+  .footer__form input:nth-child(5):active::placeholder,
+  .footer__form input:nth-child(5):focus::placeholder,
+  .footer__form input:nth-child(7):active::placeholder,
+  .footer__form input:nth-child(7):focus::placeholder,
+  .footer__form input:nth-child(9):active::placeholder,
+  .footer__form input:nth-child(9):focus::placeholder,
+  .footer__form textarea:focus::placeholder,
+  .footer__form textarea:active::placeholder {
+    color: rgba(250, 234, 214, 0.5);
   }
 }
