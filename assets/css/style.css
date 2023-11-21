@@ -31,6 +31,7 @@
   --text-dark: #0d1319;
   --black-color-opacity: rgba(0, 0, 0, 0.5);
   --white-color-opacity: rgba(255, 255, 255, 0.3);
+  --hover-color: rgba(144, 238, 144, 0.5);
   --max-width: 1200px;
 }
 * {
@@ -421,7 +422,16 @@ body {
     color: var(--white);
     font-weight: 900;
   }
-
+  .counselor,
+  .developer-btn a {
+    font-size: var(--step--1);
+    text-decoration: underline;
+  }
+  .counselor:hover,
+  .developer-btn a:hover {
+    font-style: normal;
+    color: var(--hover-color);
+  }
   .sphere__container {
     flex-direction: column;
     margin-top: 2rem;
@@ -432,7 +442,8 @@ body {
     right: 10px;
   }
   .footer__form :is(input, textarea) {
-    background-color: rgba(13, 18, 23, 0.5);
+    background-color: rgba(13, 18, 23, 0.4);
+    outline: 0.5px solid rgba(255, 255, 255, 0.3);
   }
   .footer__form input:nth-child(5):active::placeholder,
   .footer__form input:nth-child(5):focus::placeholder,
@@ -442,8 +453,6 @@ body {
   .footer__form input:nth-child(9):focus::placeholder,
   .footer__form textarea:focus::placeholder,
   .footer__form textarea:active::placeholder {
-    /* color: rgba(250, 234, 214, 0.5); */
-    color: rgba (144, 238, 144, 0.5);
-    transform: translateY(-15px);
+    color: var(--hover-color);
   }
 }
