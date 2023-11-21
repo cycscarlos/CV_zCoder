@@ -403,7 +403,7 @@ body {
 /* Up to Windows view and smartphone styles */
 @media (max-width: 500px) {
   .overlay {
-    background-color: var(--black-color-opacity);
+    background-color: rgba(0, 0, 0, 0.3);
   }
   .texto_profile {
     line-height: 1.7;
@@ -433,5 +433,8 @@ body {
   .footer__form textarea:focus::placeholder,
   .footer__form textarea:active::placeholder {
     color: rgba(250, 234, 214, 0.5);
+  }
+  .footer__form :is(input, textarea) {
+    background-color: rgba(13, 18, 23, 0.7);
   }
 }
