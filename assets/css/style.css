@@ -31,7 +31,7 @@
   --text-dark: #0d1319;
   --black-color-opacity: rgba(0, 0, 0, 0.5);
   --white-color-opacity: rgba(255, 255, 255, 0.3);
-  --hover-color: rgba(144, 238, 144, 0.5);
+  --hover-color: #03a9f4;
   --max-width: 1200px;
 }
 * {
@@ -153,17 +153,26 @@ body {
   font-size: var(--step--2);
   line-height: 1.5;
 }
+
 .counselor,
 .developer-btn a {
-  color: var(--secondary-color);
-  text-decoration: none;
+  /* color: var(--secondary-color); */
+  /* text-decoration: none; */
+  /* font-style: italic; */
   font-size: var(--step--2);
-  font-style: italic;
+
+  color: var(--white);
+  font-weight: 900;
+  text-decoration: underline;
 }
-.counselor:hover,
+/* .counselor:hover,
 .developer-btn a:hover {
   font-style: normal;
   text-decoration: underline;
+} */
+.counselor:hover,
+.developer-btn a:hover {
+  color: var(--hover-color);
 }
 
 /* Animated Text Sphere  */
@@ -425,22 +434,20 @@ body {
     top: 50%;
     transform: translate(-30%, -50%);
   }
-  .texto_titles h4,
-  .counselor,
-  .developer-btn a {
+  .texto_titles h4 {
     color: var(--white);
     font-weight: 900;
   }
   .counselor,
   .developer-btn a {
     font-size: var(--step--1);
-    text-decoration: underline;
+    /* text-decoration: underline; */
   }
-  .counselor:hover,
+  /* .counselor:hover,
   .developer-btn a:hover {
     font-style: normal;
     color: var(--hover-color);
-  }
+  } */
   .sphere__container {
     flex-direction: column;
     margin-top: 2rem;
@@ -452,6 +459,11 @@ body {
   }
   .footer__form :is(input, textarea) {
     background-color: rgba(0, 0, 0, 0.3);
+  }
+  .copyrightTexto {
+    font-size: var(--step--3);
+    padding: 8px 0;
+    text-align: center;
   }
   /* .footer__form input:nth-child(5):active::placeholder,
   .footer__form input:nth-child(5):focus::placeholder,
