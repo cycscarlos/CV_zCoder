@@ -5,59 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="./assets/img/favicon.png"
+      href="./../assets/img/favicon.png"
       type="image/x-icon"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>zCoder | Online Profile</title>
+    <link rel="stylesheet" href="./../assets/css/style.css" />
+    <title>zCoder | Perfil Online</title>
     <style></style>
   </head>
   <body>
     <section class="section__container profile__container">
-      <div class="overlay"></div>
+      <!-- <div class="overlay"></div> -->
       <div class="lenguaje">
-        <span class="english">English</span>
-        <input class="check" type="checkbox" />
-        <span class="spanish">Spanish</span>
+        <span class="english">Inglés</span>
+        <input class="check" type="checkbox" checked />
+        <span class="spanish">Español</span>
       </div>
       <div class="texto">
         <div class="texto_titles">
           <h1>Carlos Colmenares A.</h1>
-          <h2>Electronic Engineer</h2>
-          <h3>Certified in IBM Mainframe Technologies (4 times in the USA)</h3>
+          <h2>Ingeniero Electrónico</h2>
+          <h3>
+            Certificado en tecnologías Mainframe de IBM (4 veces en USA)
+          </h3>
           <h4>
-            Specialized in
+            Especializado en
             <span
-              >Software development, Telecommunications, and Electronics
-              Security systems.</span
+              >Desarrollo de Software, Sistemas de Redes de Telecomunicaciones,
+              y Sistemas Electrónicos de Seguridad.</span
             >
           </h4>
         </div>
         <p class="texto_profile">
-          Throughout my professional career, I have been hired as a
-          <a href="#sphere__container" class="counselor">counselor</a>, in the
-          capacity of outsourcing, by more than 40 companies and corporations to
-          provide them with support and consulting in developing and
-          implementing of complex technical projects in the computing sciences,
-          networking, and electronics security systems. Some of these companies
-          are as prestigious as the National Registry of Costa Rica (San Jose,
-          Costa Rica), Banco Invercredito (Bogota, Colombia), and in Venezuela:
-          PDVSA, Cargill, CANTV, CVG, Metro de Caracas, as well as thirteen (13)
-          financial banks, among many others. Originally, I worked for over 25
-          years as a systems programmer and specialist for IBM's Mainframe
-          technologies. After that phase ended, I focused on microwave
-          telecommunications and electronic security systems, a field in which I
-          have been working for over 20 years, developing large-scale projects.
-          As a software developer, in my free time, I develop websites and apps
-          for desktop computers and smartphones.<br /><br />The following link
-          shows my progress as a software developer...
+          A lo largo de mi carrera profesional, he sido contratado como
+          <a href="#sphere__container" class="counselor">asesor</a>, en calidad
+          de outsourcing, por más de 40 empresas y corporaciones para brindarles
+          apoyo y consultoría en el desarrollo e implementación de proyectos
+          técnicos complejos en áreas de ciencias de la computación, redes y
+          sistemas de seguridad electrónica. Algunas de estas empresas son tan
+          prestigiosas, como el Registro Nacional de Costa Rica (San José, Costa
+          Rica), Banco Invercredito (Bogotá, Colombia) y en Venezuela: PDVSA,
+          Cargill, CANTV, CVG, Metro de Caracas, así como trece (13) bancos
+          financieros, entre muchas otras empresas. Originalmente, trabajé
+          durante más de 25 años como programador de sistemas y especialista en
+          tecnologías Mainframe de IBM. Al culminar esa etapa, me aboqué a las
+          áreas de redes de telecomunicaciones por microondas y sistemas de
+          seguridad electrónica, un campo en el que llevo trabajando más de 20
+          años, desarrollando proyectos a gran escala. Como desarrollador de
+          software, en mi tiempo libre, desarrollo sitios web y apps para
+          computadoras de escritorio y teléfonos inteligentes.<br /><br />En el
+          siguiente enlace puedes ver mis avances como Desarrollador de
+          Software...
           <span class="developer-btn">
             <a href="https://cycscarlos.github.io/my-portfolio" target="_blank">
-              Portfolio</a
+              Portafolio</a
             >
           </span>
         </p>
@@ -69,7 +73,7 @@
       id="sphere__container"
     >
       <div class="sphere_title">
-        <h4>...some of the clients who <span>¡Hired Me!</span></h4>
+        <h4>...algunos de los clientes que me han<span>¡Contratado!</span></h4>
       </div>
       <!-- <span class="content" id="content"></span> -->
       <div class="content" id="content"></div>
@@ -78,13 +82,14 @@
     <footer>
       <div class="section__container footer__container">
         <div class="footer__content">
-          <h2 class="footer__title">Contact <span>Me!</span></h2>
-          <p class="footer__subtitle">If you have any project in your mind</p>
+          <h2 class="footer__title">Contácta<span>me!</span></h2>
+          <p class="footer__subtitle">Si tienes algún proyecto en mente</p>
           <div class="footer__details">
             <p>
-              You can reach me through the contact form provided on this
-              website. Simply fill out the form with your name, email address,
-              and message, and I will get back to you as soon as possible.
+              Puedes contactarme a través del formulario de contacto
+              proporcionado en este sitio web. Simplemente completa el
+              formulario con tu nombre, correo electrónico y mensaje, y me
+              pondré en contacto contigo tan pronto como sea posible.
             </p>
             <p>
               <span>CYCS <strong>&</strong> Co.</span> Ingenieria e
@@ -121,75 +126,74 @@
           </div>
         </div>
         <form
-          target="_blank"
           action="d6d904e1a72f513c29dd41f58e8068e8"
           method="POST"
+          target="_blank"
           data-netlify="true"
           class="footer__form"
         >
           <input
             type="hidden"
             name="_subject"
-            value="¡Email sent from zCoder website!"
+            value="¡Correo enviado desde zCoder website!"
           />
           <input
             type="hidden"
             name="_autoresponse"
-            value="¡Hi! Thanks a lot for your message... Best regards!"
+            value="¡Hola! Muchisímas Gracias por contáctarme..Saludos!"
           />
           <input type="hidden" name="_captcha" value="false" />
 
           <label for="nombre"></label>
           <input
             id="nombre"
-            name="Full Name"
+            name="Nombre y Apellido"
             type="text"
-            placeholder="Full Name"
-            title="Only accepts letters and white spaces"
-            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+            placeholder="Nombre y Apellido"
             required
+            title="Solo acepta letras y espacios en blanco"
+            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
           />
-
           <label for="correo"></label>
           <input
             id="correo"
-            name="Electronic Email"
+            name="Correo Electrónico"
             type="email"
-            placeholder="Your Email Address"
-            title="Wrong Email Address"
+            placeholder="Correo Electrónico"
+            title="Email incorrecto"
             pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
             required
           />
           <label for="telefono"></label>
           <input
             id="telefono"
-            name="Phone Number"
+            name="Número de Teléfono"
             type="text"
-            placeholder="Your Phone Number"
-            title="Only accepts numbers and up to a maximum of 11 characters"
-            pattern="^[0123456789]{1,11}"
+            placeholder="Número de Teléfono"
             required
+            title="Solo acepta números y hasta un máximo de 11 carácteres"
+            pattern="^[0123456789]{1,11}"
           />
-          <label for="message"></label>
+          <label for="mensaje"></label>
           <textarea
-            id="message"
-            name="Message"
+            id="mensaje"
+            name="Mensaje"
             cols="30"
             rows="10"
             placeholder="Tú Idea"
             required
           ></textarea>
-          <!-- <input class="footer__btn" type="submit" value="Send Message" />       -->
-          <button type="submit" class="footer__btn">Send Message</button>
+          <!-- <input class="footer__btn" type="submit" value="Enviar Mensaje" /> -->
+          <button type="submit" class="footer__btn">Enviar Mensaje</button>
         </form>
 
         <div id="gracias" class="modal">
           <div class="modal-content">
             <article class="contact-form-response">
               <h3>
-                ¡Thank You!
+                ¡Muchas Gracias!
                 <br />
-                for your contact..
+                por contáctarme..
               </h3>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -212,11 +216,12 @@
     </footer>
 
     <!-- Javascript animation libraries -->
-    <script src="./assets/js/scrollreveal.min.js"></script>
-    <script src="./assets/js/scrollReveal.js"></script>
+    <script src="./../assets/js/scrollreveal.min.js"></script>
+    <script src="./../assets/js/scrollReveal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
-    <script src="./assets/js/script_tagCloud.js"></script>
-    <script src="./assets/js/emailForm.js"></script>
-    <script src="./assets/js/lenguaje.js"></script>
+    <script src="./../assets/js/script_tagCloud.js"></script>
+    <script src="./../assets/js/emailForm.js"></script>
+    <!-- <script src="./../assets/js/botonLanguage.js"></script> -->
+    <script src="./../assets/js/lenguaje.js"></script>
   </body>
 </html>
