@@ -415,6 +415,13 @@ body {
     top: 50%;
     transform: translate(-30%, -50%);
   }
+  .texto_titles h4,
+  .counselor,
+  .developer-btn a {
+    color: var(--white);
+    font-weight: 900;
+  }
+
   .sphere__container {
     flex-direction: column;
     margin-top: 2rem;
@@ -424,6 +431,9 @@ body {
     top: 10px;
     right: 10px;
   }
+  .footer__form :is(input, textarea) {
+    background-color: rgba(13, 18, 23, 0.5);
+  }
   .footer__form input:nth-child(5):active::placeholder,
   .footer__form input:nth-child(5):focus::placeholder,
   .footer__form input:nth-child(7):active::placeholder,
@@ -432,9 +442,8 @@ body {
   .footer__form input:nth-child(9):focus::placeholder,
   .footer__form textarea:focus::placeholder,
   .footer__form textarea:active::placeholder {
-    color: rgba(250, 234, 214, 0.5);
-  }
-  .footer__form :is(input, textarea) {
-    background-color: rgba(13, 18, 23, 0.7);
+    /* color: rgba(250, 234, 214, 0.5); */
+    color: rgba (144, 238, 144, 0.5);
+    transform: translateY(-15px);
   }
 }
