@@ -153,23 +153,13 @@ body {
   font-size: var(--step--2);
   line-height: 1.5;
 }
-
 .counselor,
 .developer-btn a {
-  /* color: var(--secondary-color); */
-  /* text-decoration: none; */
-  /* font-style: italic; */
   font-size: var(--step--2);
-
   color: var(--white);
-  font-weight: 900;
+  font-weight: 100;
   text-decoration: underline;
 }
-/* .counselor:hover,
-.developer-btn a:hover {
-  font-style: normal;
-  text-decoration: underline;
-} */
 .counselor:hover,
 .developer-btn a:hover {
   color: var(--hover-color);
@@ -334,7 +324,6 @@ body {
   text-align: center;
   font-size: var(--step--2);
   letter-spacing: 1px;
-  /* color: rgba(250, 234, 214, 0.1); */
   color: var(--secondary-color);
   -webkit-transform: translateY(-15px);
   -moz-transform: translateY(-15px);
@@ -397,7 +386,6 @@ body {
 /* iPad styles */
 @media (max-width: 768px) {
   .overlay {
-    /* background-color: rgba(0, 0, 0, 0.85); */
     background-color: rgba(0, 0, 0, 0.5);
   }
   .profile__container {
@@ -438,16 +426,6 @@ body {
     color: var(--white);
     font-weight: 900;
   }
-  .counselor,
-  .developer-btn a {
-    font-size: var(--step--1);
-    /* text-decoration: underline; */
-  }
-  /* .counselor:hover,
-  .developer-btn a:hover {
-    font-style: normal;
-    color: var(--hover-color);
-  } */
   .sphere__container {
     flex-direction: column;
     margin-top: 2rem;
@@ -465,7 +443,7 @@ body {
     padding: 8px 0;
     text-align: center;
   }
-  /* .footer__form input:nth-child(5):active::placeholder,
+  .footer__form input:nth-child(5):active::placeholder,
   .footer__form input:nth-child(5):focus::placeholder,
   .footer__form input:nth-child(7):active::placeholder,
   .footer__form input:nth-child(7):focus::placeholder,
@@ -473,6 +451,10 @@ body {
   .footer__form input:nth-child(9):focus::placeholder,
   .footer__form textarea:focus::placeholder,
   .footer__form textarea:active::placeholder {
+    transform: translateY(-15px);
+    text-align: center;
+    font-size: var(--step--2);
+    letter-spacing: 1px; 
     color: var(--hover-color);
-  } */
+  }
 }
