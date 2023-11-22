@@ -314,12 +314,12 @@ body {
 }
 
 /* Placeholder animation */
-.footer__form input:nth-child(5):active::placeholder,
 .footer__form input:nth-child(5):focus::placeholder,
-.footer__form input:nth-child(7):active::placeholder,
+.footer__form input:nth-child(5):active::placeholder,
 .footer__form input:nth-child(7):focus::placeholder,
-.footer__form input:nth-child(9):active::placeholder,
+.footer__form input:nth-child(7):active::placeholder,
 .footer__form input:nth-child(9):focus::placeholder,
+.footer__form input:nth-child(9):active::placeholder,
 .footer__form textarea:focus::placeholder,
 .footer__form textarea:active::placeholder {
   transform: translateY(-15px);
@@ -470,6 +470,16 @@ body {
   }
   input[type="tel"]:focus::placeholder,
   input[type="tel"]:active::placeholder {
+    color: var(--secondary-color);
+    transform: translateY(-15px);
+    text-align: center;
+    -webkit-transform: translateY(-15px);
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -o-transform: translateY(-15px);
+  }
+  .footer__form textarea:focus::placeholder,
+  .footer__form textarea:active::placeholder {
     color: var(--secondary-color);
     transform: translateY(-15px);
     text-align: center;
