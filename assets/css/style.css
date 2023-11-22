@@ -32,6 +32,7 @@
   --black-color-opacity: rgba(0, 0, 0, 0.5);
   --white-color-opacity: rgba(255, 255, 255, 0.3);
   --hover-color: #03a9f4;
+  --placeholder-color: #03a9f4;
   --max-width: 1200px;
 }
 * {
@@ -445,7 +446,25 @@ body {
     padding: 8px 0;
     text-align: center;
   }
-  .footer__form input:nth-child(5):active::placeholder,
+  input[type="text"]:focus::placeholder,
+  input[type="text"]:active::placeholder {
+    color: var(--placeholder-color);
+  }
+
+  input[type="email"]:focus::placeholder,
+  input[type="email"]:active::placeholder {
+    color: var(--placeholder-color);
+  }
+  input[type="tel"]:focus::placeholder,
+  input[type="tel"]:active::placeholder {
+    color: var(--placeholder-color);
+  }
+  textarea:focus::placeholder,
+  textarea:active::placeholder {
+    color: var(--placeholder-color);
+  }
+
+  /* .footer__form input:nth-child(5):active::placeholder,
   .footer__form input:nth-child(5):focus::placeholder,
   .footer__form input:nth-child(7):active::placeholder,
   .footer__form input:nth-child(7):focus::placeholder,
@@ -458,5 +477,5 @@ body {
     font-size: var(--step--2);
     letter-spacing: 1px;
     color: var(--hover-color);
-  }
+  } */
 }
