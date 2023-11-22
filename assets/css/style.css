@@ -437,7 +437,8 @@ body {
     right: 10px;
   }
   .footer__form :is(input, textarea) {
-    background-color: rgba(0, 0, 0, 0.3);
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    background-color: rgb(b5, b5, b5);
   }
   .copyrightTexto {
     font-size: var(--step--3);
