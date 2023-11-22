@@ -438,8 +438,7 @@ body {
     right: 10px;
   }
   .footer__form :is(input, textarea) {
-    background-color: antiquewhite;
-    border: 1px solid var(--hover-color);
+    background-color: rgb(80, 80, 80);
   }
   .copyrightTexto {
     font-size: var(--step--3);
@@ -459,8 +458,8 @@ body {
   input[type="tel"]:active::placeholder {
     color: var(--placeholder-color);
   }
-  textarea:focus::placeholder,
-  textarea:active::placeholder {
+  .footer_form textarea:focus::placeholder,
+  .footer_form textarea:active::placeholder {
     color: var(--placeholder-color);
   }
 
