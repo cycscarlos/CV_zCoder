@@ -438,7 +438,8 @@ body {
     right: 10px;
   }
   .footer__form :is(input, textarea) {
-    background-color: rgb(80, 80, 80);
+    /* background-color: rgb(80, 80, 80); */
+    background-color: #535b61;
   }
   .copyrightTexto {
     font-size: var(--step--3);
@@ -447,20 +448,20 @@ body {
   }
   input[type="text"]:focus::placeholder,
   input[type="text"]:active::placeholder {
-    color: var(--placeholder-color);
+    color: var(--secondary-color);
   }
 
   input[type="email"]:focus::placeholder,
   input[type="email"]:active::placeholder {
-    color: var(--placeholder-color);
+    color: var(--secondary-color);
   }
   input[type="tel"]:focus::placeholder,
   input[type="tel"]:active::placeholder {
-    color: var(--placeholder-color);
+    color: var(--secondary-color);
   }
   .footer_form textarea:focus::placeholder,
   .footer_form textarea:active::placeholder {
-    color: var(--placeholder-color);
+    color: var(--secondary-color);
   }
 
   /* .footer__form input:nth-child(5):active::placeholder,
