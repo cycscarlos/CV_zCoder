@@ -34,6 +34,8 @@
   --hover-color: #03a9f4;
   --circle-color: rgba(158, 141, 107, 0.5);
   --max-width: 1200px;
+  --z-tooltip: 10;
+  --z-fixed: 100;
 }
 * {
   padding: 0;
@@ -165,21 +167,23 @@ body {
 .developer-btn a:hover {
   color: var(--hover-color);
 }
-.ri-arrow-down-circle-line {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
+.scrollup {
+  position: fixed;
+  bottom: -5rem;
+  left: 30px;
   margin: auto;
-  font-size: 30px;
+  text-decoration: none;
   background: transparent;
-  color: var(--circle-color);
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   border: none;
-  z-index: 999;
+}
+
+.scrollup i {
+  font-size: var(--step-3);
+  color: var(--circle-color);
+}
+
+.show-scroll {
+  bottom: 5rem;
 }
 
 /* Animated Text Sphere  */
