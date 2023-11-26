@@ -36,6 +36,8 @@
   --max-width: 1200px;
   --z-tooltip: 10;
   --z-fixed: 100;
+  --color-azulObscuro: #27607c;
+  --color-azulClaro: #1e5271;
 }
 * {
   padding: 0;
@@ -167,7 +169,7 @@ body {
 .developer-btn a:hover {
   color: var(--hover-color);
 }
-.scrollup {
+.scrollDown {
   position: fixed;
   bottom: -5rem;
   left: 30px;
@@ -176,14 +178,42 @@ body {
   background: transparent;
   border: none;
 }
-
-.scrollup i {
+.scrollDown i {
   font-size: var(--step-3);
   color: var(--circle-color);
 }
-
-.show-scroll {
+.show-scrollDown {
   bottom: 5rem;
+}
+
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  top: -20%;
+  background-color: var(--circle-color);
+  text-decoration: none;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: flex;
+  opacity: 0.9;
+  z-index: var(--z-tooltip);
+  transition: 0.6s;
+}
+
+.scrollup:hover {
+  background-color: transparent;
+  opacity: 1;
+}
+
+.scrollup__icon {
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+/** Show scroll */
+.show-scroll {
+  /* bottom: 5rem; */
+  top: 10rem;
 }
 
 /* Animated Text Sphere  */

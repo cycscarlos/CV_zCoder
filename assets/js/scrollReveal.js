@@ -9,7 +9,7 @@ sr.reveal(`.texto`, {
   origin: "top",
   interval: 100,
 });
-sr.reveal(`.scrollup`, {
+sr.reveal(`.scrollDown`, {
   origin: "left",
   interval: 300,
 });
