@@ -480,4 +480,7 @@ body {
     padding: 8px 0;
     text-align: center;
   }
+  .show-scroll {
+    right: 3rem;
+  }
 }
