@@ -445,10 +445,6 @@ body {
 }
 /* Up to Windows view and smartphone styles */
 @media (max-width: 500px) {
-  body {
-    overflow: hidden;
-  }
-
   .overlay {
     background-color: rgba(0, 0, 0, 0.7);
   }
@@ -486,5 +482,11 @@ body {
   }
   .show-scroll {
     right: 3rem;
+  }
+}
+@media (max-width: 375px) {
+  .section__container,
+  .tagcloud {
+    max-width: 375px;
   }
 }
