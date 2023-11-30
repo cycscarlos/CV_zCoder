@@ -445,6 +445,10 @@ body {
 }
 /* Up to Windows view and smartphone styles */
 @media (max-width: 500px) {
+  body {
+    overflow: hidden;
+  }
+
   .overlay {
     background-color: rgba(0, 0, 0, 0.7);
   }
