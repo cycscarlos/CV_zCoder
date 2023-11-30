@@ -170,34 +170,7 @@ body {
   color: var(--hover-color);
 }
 
-.scrollup {
-  position: fixed;
-  right: 1rem;
-  top: -20%;
-  background-color: var(--color-azulObscuro);
-  text-decoration: none;
-  border-radius: 50%;
-  padding: 0.5rem;
-  display: flex;
-  opacity: 0.9;
-  z-index: var(--z-tooltip);
-  transition: 0.6s;
-}
 
-.scrollup:hover {
-  background-color: var(--circle-color);
-  opacity: 1;
-}
-
-.scrollup__icon {
-  color: var(--white);
-  font-size: 1.2rem;
-}
-
-.show-scroll {
-  /* bottom: 5rem; */
-  top: 10rem;
-}
 
 /* Animated Text Sphere  */
 
@@ -480,13 +453,5 @@ body {
     padding: 8px 0;
     text-align: center;
   }
-  .show-scroll {
-    right: 3rem;
-  }
-}
-@media (max-width: 375px) {
-  .section__container,
-  .tagcloud {
-    max-width: 375px;
-  }
+
 }
