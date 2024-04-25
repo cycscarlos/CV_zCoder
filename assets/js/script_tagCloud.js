@@ -40,6 +40,21 @@ const myTags = [
   "DESCA",
   "Cargill Venezuela",
   "Industrias Cegasa",
+  "Condominio Los Tulipanes 3",
+  "Posada Casa Manantial",
+  "Red Franquicias Locatel",
+  "Red Supermércados DíaDía",
+  "Administradora Asiamérica",
+  "Administradora Conadem",
+  "Conadem",
+  "Corporación STC",
+  "Ferreteria Hercrami",
+  "Hotel DUNES",
+  "Inatur",
+  "TV NotiMinuto",
+  "Empresas Nucita",
+  "Corporación Yambal",
+  "VeneAsistencia",
 ];
 
 // Render a default tag cloud.

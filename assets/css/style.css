@@ -1,6 +1,6 @@
 /* Desktop styles */
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@300;400;700&family=Gelasio:wght@400;600&Poppins:wght@400;500;600;700display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&family=Open+Sans:wght@300;400;700&family=Gelasio:wght@100;200;400;600&Poppins:wght@400;500;600;700display=swap");
 
 :root {
   --step--4: clamp(0.48rem, 0.47rem + 0.06vw, 0.51rem);
@@ -134,23 +134,25 @@ body {
   align-items: flex-start;
   margin-bottom: 20px;
 }
-.texto_titles h1 {
+.texto_titles .nombre {
   font-size: var(--step-2);
   margin-bottom: 10px;
+  font-weight: 100;
 }
-.texto_titles h2 {
-  font-size: var(--step-0);
+.texto_titles .academia {
+  font-size: var(--step--1);
+  font-weight: 100;
   margin-bottom: 10px;
   text-align: initial;
 }
-.texto_titles h3 {
+.texto_titles .certificacion {
   font-size: var(--step--2);
   margin-bottom: 10px;
   text-align: initial;
   font-family: open sans condensed;
   font-weight: 100;
 }
-.texto_titles h4 {
+.texto_titles .especialidad {
   color: var(--secondary-color);
   font-size: var(--step--2);
 }
@@ -314,7 +316,7 @@ button {
   margin-left: 20px;
 }
 .sphere__container .tagcloud {
-  font-size: var(--step-0);
+  font-size: var(--step--0);
 
   /* font-weight: 650; */
   /* margin-left: 30%; */
@@ -380,7 +382,8 @@ button {
 }
 .footer__details p:nth-child(2) {
   font-style: italic;
-  font-size: var(--step--2);
+  font-size: var(--step--3);
+  /* font-size: var(--step--2); */
 }
 .footer__details p:nth-child(2) span {
   font-size: var(--step--0);
@@ -568,7 +571,7 @@ button {
     background-color: #515151;
   }
   .copyrightTexto {
-    font-size: var(--step--3);
+    font-size: var(--step--4);
     padding: 8px 0;
     text-align: center;
   }
