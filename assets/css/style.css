@@ -24,7 +24,7 @@
   /* My preferred colors */
   --secondary-color: #9d8d6c;
   --prueba: hsl(40, 20%, 52%);
-  --footer-color: #ff4e05;
+  --footer-color: #020202;
   --footer-color-dark: #bf3900;
   --black: #000000;
   --white: #ffffff;
@@ -127,6 +127,7 @@ body {
   transform: translate(-15%, -50%);
   color: white;
   line-height: 1.2;
+  font-family: open sans condensed;
 }
 .texto_titles {
   display: flex;
@@ -151,14 +152,14 @@ body {
   text-align: initial;
   font-family: open sans condensed;
   font-weight: 100;
+  color: var(--secondary-color);
 }
 .texto_titles .especialidad {
-  color: var(--secondary-color);
   font-size: var(--step--2);
 }
 .texto_profile {
   text-align: justify;
-  font-size: var(--step--2);
+  font-size: var(--step--1);
   line-height: 1.5;
 }
 /* .counselor,
