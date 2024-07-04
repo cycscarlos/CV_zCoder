@@ -39,6 +39,7 @@
   --z-fixed: 100;
   --color-azulObscuro: #27607c;
   --color-azulClaro: #1e5271;
+  --text-color-small: rgb(126, 123, 123);
 }
 * {
   padding: 0;
@@ -139,6 +140,7 @@ body {
   font-size: var(--step-2);
   margin-bottom: 10px;
   font-weight: 100;
+  margin-bottom: 1rem;
 }
 .texto_titles .academia {
   font-size: var(--step--1);
@@ -148,20 +150,28 @@ body {
 }
 .texto_titles .certificacion {
   font-size: var(--step--2);
-  margin-bottom: 10px;
   text-align: initial;
   font-family: open sans condensed;
+  background-color: var(--text-color-small);
+  color: var(--white);
   font-weight: 100;
-  color: var(--secondary-color);
 }
 .texto_titles .especialidad {
-  font-size: var(--step--2);
+  font-size: var(--step--1);
+  font-weight: 100;
+  margin-bottom: 0.5rem;
 }
 .texto_profile {
   text-align: justify;
   font-size: var(--step--1);
   line-height: 1.5;
 }
+
+.texto_profile small.empresas {
+  background-color: var(--text-color-small);
+  color: white;
+}
+
 /* .counselor,
 .developer-btn a {
   font-size: var(--step--2);
